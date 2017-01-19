@@ -14,7 +14,7 @@ export default class App extends Component {
   }
 
   getQuotes(){
-    axios.get(`http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en`)
+    axios.get(`https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en`)
     .then(res => {
       var quote = {
         author: res.data.quoteAuthor,

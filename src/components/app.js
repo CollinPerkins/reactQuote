@@ -14,8 +14,12 @@ export default class App extends Component {
   }
 
   getQuotes(){
-    axios.get("http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en")
+    // var url = 'http://localhost:3030/getQuote';
+    var url = 'https://afternoon-tor-42773.herokuapp.com/getQuote';
+    axios.get(url)
     .then(res => {
+      console.log(res);
+      res = res.data;
       var quote = {
         author: res.data.quoteAuthor,
         text: res.data.quoteText,
@@ -34,7 +38,6 @@ export default class App extends Component {
           text: "No Quote Available"
         };
       }
-
       this.setState({quote: quote})
     });
   }

@@ -1,0 +1,16 @@
+.right {
+  text-align: right;
+}
+.quoteSize {
+  font-size: 30px;
+}
+
+.quoteConainer {
+  margin: 0 auto;
+  margin-top: 35%;
+  background-color: white;
+}
+
+.centerText {
+  text-align: center;
+}

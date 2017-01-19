@@ -59,7 +59,7 @@ export default class App extends Component {
             </button>
           </div>
         </div>
-        <h3><a href=""></a></h3>
+        <h3><a href="https://github.com/CollinPerkins/reactQuote">Github Link for React Random Quote App</a></h3>
       </div>
     );
   }

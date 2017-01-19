@@ -14,7 +14,7 @@ export default class App extends Component {
   }
 
   getQuotes(){
-    axios.get(`http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en`)
+    axios.get("http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en")
     .then(res => {
       var quote = {
         author: res.data.quoteAuthor,
@@ -59,7 +59,7 @@ export default class App extends Component {
             </button>
           </div>
         </div>
-        <h3><a href="https://github.com/CollinPerkins/reactQuote">Github Link for React Random Quote App</a></h3>
+        <h3><a href="https://github.com/CollinPerkins/reactQuote" target="_blank">Github Link for React Random Quote App</a></h3>
       </div>
     );
   }
